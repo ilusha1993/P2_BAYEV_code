@@ -97,8 +97,11 @@ h1 {
   padding: 0px 10px;
 }
 
-header p {
+p {
   font-size: 13px;
+}
+
+.search p {
   margin: 5px 0px;
   padding: 0px 10px;
 }
@@ -194,6 +197,79 @@ form {
 span:hover {
   font-size: 17px;
   text-shadow: 1px 1px 2px black;
+}
+/*-----------------------------------------------------------/*
+/* SEARCH_FILTERS (les filtres) */
+.search__filters {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 10px 30px;
+  max-width: fit-content;
+}
+
+h3 {
+  font-size: 14px;
+  padding: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin: 7px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  overflow: visible;
+}
+
+.filter button {
+  width: 40px;
+  height: 40px;
+  margin-left: -2px;
+  border: 1px solid #deebff;
+  border-radius: 50px;
+  background-color: #deebff;
+  position: relative;
+}
+
+.filter i {
+  text-decoration: none;
+  font-size: 16px;
+  color: #0065fc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text__filter {
+  padding: 0 15px;
+  font-weight: 600;
+}
+
+/*   filters au survol   */
+.filter:hover {
+  box-shadow: 1px 1px 5px black;
+  transition: 0.5s;
+}
+
+.filter:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.filter:hover button {
+  background-color: #0065fc;
+  transition: 0.5s;
+}
+
+.filter:hover .text__filter {
+  text-shadow: 1px 1px 3px gray;
 }
 
 /*-----------------------------------------------------------*/
