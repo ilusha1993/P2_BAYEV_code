@@ -362,9 +362,6 @@ h2 {
 
 /*   CARDS HEBERGEMENTS (les vignettes)   */
 .section__menu a {
-  display: block;
-  width: fit-content;
-  height: fit-content;
   text-decoration: none;
   color: black;
   margin: 11px;
@@ -478,9 +475,6 @@ aside {
 }
 
 .aside__menu a {
-  display: block;
-  width: fit-content;
-  height: fit-content;
   text-decoration: none;
   color: black;
   margin: 11px 0;
@@ -641,8 +635,8 @@ aside {
 
   .card__hebergement {
     align-self: center;
-    width: 450px;
-    height: 385px;
+    width: 413px;
+    height: 350px;
   }
 
   .hebergement__image {
