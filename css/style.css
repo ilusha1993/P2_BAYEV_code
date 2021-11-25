@@ -323,9 +323,18 @@ h3 {
 #hebergement {
   margin: 10px;
   display: flex;
+  height: fit-content;
   align-items: flex-end;
   justify-content: center;
   flex-wrap: wrap-reverse;
+}
+
+.title__hebergement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding-right: 15px;
 }
 
 /* Hébergements à Marseille */
@@ -337,6 +346,7 @@ section {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 13px;
+  flex: 2;
 }
 
 .section__menu {
@@ -357,6 +367,7 @@ h2 {
   height: fit-content;
   text-decoration: none;
   color: black;
+  margin: 11px;
 }
 
 .card__hebergement {
@@ -369,7 +380,6 @@ h2 {
   padding: 3px;
   box-shadow: 0px 5px 10px #999;
   position: relative;
-  margin: 1.8%;
   overflow: hidden;
 }
 
@@ -398,6 +408,7 @@ h2 {
 }
 
 .hebergement__body p,
+.aside__body p,
 h5,
 .notation {
   margin: 2px 6px;
@@ -413,8 +424,6 @@ h5 {
 .notation {
   display: flex;
   font-size: 12px;
-}
-.notation {
   color: #c7c7c7;
 }
 
@@ -442,13 +451,108 @@ span {
 #afficher {
   text-decoration: none;
   color: black;
-  margin: 35px;
+  margin: 18px;
   font-size: 14px;
   font-weight: 900;
 }
 
 #afficher:hover {
   text-decoration: underline;
+}
+
+/*   CARDS ASIDE   */
+aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 13px;
+  flex: 1;
+}
+
+.aside__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside__menu a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  color: black;
+  margin: 11px 0;
+}
+
+.card__aside {
+  width: 275px;
+  height: 110px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  text-align: left;
+  padding: 3px;
+  box-shadow: 0px 5px 10px #999;
+  position: relative;
+}
+
+/*   Cadre d'image de la vignette   */
+.aside__image {
+  width: 35%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+}
+
+.aside__image img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.aside__exeption img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/*   Partie text de la vignette   */
+.aside__body {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+}
+
+/*   Cards au survol   */
+.card__aside:hover {
+  box-shadow: 0px 5px 10px black;
+  transition: 0.5s;
+}
+
+.card__aside:hover h5 {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.card__aside:hover .aside__image img {
+  height: 120%;
+  transition-duration: 0.5s;
+}
+
+.card__aside:hover .aside__exeption img {
+  width: 120%;
+  transition-duration: 0.5s;
 }
 
 /*-----------------------------------------------------------*/
@@ -526,6 +630,13 @@ span {
     align-items: center;
     position: relative;
     padding: 0px;
+  }
+
+  aside {
+    max-width: 350px;
+    display: inline-block;
+    position: sticky;
+    top: 0px;
   }
 
   .card__hebergement {
@@ -646,7 +757,7 @@ span {
   }
 
   section {
-    margin: 0px;
+    margin: 20px 0px;
     padding: 0px;
     width: 100%;
     max-width: 500px;
@@ -677,5 +788,27 @@ span {
 
   #afficher {
     text-align: center;
+  }
+
+  aside {
+    margin: 20px 0px;
+    flex: none;
+    margin: 0px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card__aside {
+    min-width: 300px;
+    height: 130px;
+    padding: 4px;
+  }
+
+  .aside__image {
+    width: 40%;
+  }
+
+  .aside__body {
+    width: 60%;
   }
 }
