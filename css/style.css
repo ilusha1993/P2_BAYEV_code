@@ -629,6 +629,52 @@ aside {
   transition-duration: 0.5s;
 }
 
+/*--/\-ACTIVITES-/\--*/
+
+/*  /\ MAIN /\  */
+/*-----------------------------------------------------------*/
+/*  \/ FOOTER \/  */
+
+footer {
+  display: flex;
+}
+
+.apropos,
+.noshebergements,
+.assistance {
+  margin-right: 60px;
+  padding: 10px 50px;
+}
+
+h4 {
+  white-space: nowrap;
+  width: 100%;
+  font-size: 13.5px;
+}
+
+.apropos ul,
+.noshebergements ul,
+.assistance ul {
+  padding: 0px;
+  list-style: none;
+  line-height: 30px;
+}
+
+.apropos li,
+.noshebergements li,
+.assistance li {
+  font-size: 13px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-shadow: 1px 1px 1px gray;
+}
+
 /*-----------------------------------------------------------*/
 /*  \/ SOLUTION D'ECRTAN ENTRE 768 ET 992 \/  */
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -745,6 +791,12 @@ aside {
 
   .activites__menu .h40 {
     height: 33.333%;
+  }
+
+  .apropos,
+  .noshebergements,
+  .assistance {
+    margin: 0;
   }
 }
 
@@ -935,4 +987,26 @@ aside {
     height: 200px;
     padding: 4px;
   }
+  footer {
+    flex-direction: column;
+  }
+
+  .apropos,
+  .noshebergements,
+  .assistance {
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  h4 {
+    font-size: 17.5px;
+  }
+
+  .apropos li,
+  .noshebergements li,
+  .assistance li {
+    font-size: 16px;
+  }
 }
+/*  /\ PETITE SOLUTION D'ECRAN /\  */
+/*-----------------------------------------------------------*/
