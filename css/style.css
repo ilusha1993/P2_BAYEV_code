@@ -180,6 +180,7 @@ form {
   background-color: #0065fc;
   border: 1px solid #f2f2f2;
   border-radius: 0 20px 20px 0;
+  padding: 0px;
 }
 
 #recherche i {
@@ -221,7 +222,7 @@ form {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 15px;
   padding: 8px;
 }
 
@@ -612,6 +613,10 @@ aside {
   background-color: white;
 }
 
+.activite__body h5 {
+  margin: 0px;
+}
+
 /*   Au survol   */
 .activites__menu a:hover .card__activite {
   box-shadow: 0px 5px 10px black;
@@ -649,7 +654,7 @@ footer {
 h4 {
   white-space: nowrap;
   width: 100%;
-  font-size: 13.5px;
+  font-size: 14px;
 }
 
 .apropos ul,
@@ -692,6 +697,10 @@ footer a:hover {
   }
 
   h3 {
+    font-size: 16px;
+  }
+
+  h4 {
     font-size: 15.5px;
   }
 
@@ -847,6 +856,14 @@ footer a:hover {
     margin: 17px 0px 0px 0px;
   }
 
+  h4 {
+    font-size: 16.5px;
+  }
+
+  h5 {
+    font-size: 15.5px;
+  }
+
   p {
     font-size: 14.5px;
   }
@@ -998,14 +1015,10 @@ footer a:hover {
     padding: 0 50px;
   }
 
-  h4 {
-    font-size: 17.5px;
-  }
-
   .apropos li,
   .noshebergements li,
   .assistance li {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 /*  /\ PETITE SOLUTION D'ECRAN /\  */
