@@ -183,15 +183,17 @@ form {
   padding: 0px;
 }
 
+#recherche span {
+  font-size: 16px;
+  display: contents;
+  color: white;
+}
+
 #recherche i {
   display: none;
   text-decoration: none;
   color: white;
   font-size: 20px;
-}
-
-#recherche p {
-  font-size: 16px;
 }
 
 /*   button recherche au survol   */
@@ -200,14 +202,14 @@ form {
   transition: 0.3s;
 }
 
-#recherche:hover p {
-  font-size: 17px;
+#recherche:hover i {
+  font-size: 21px;
   text-shadow: 1px 1px 2px black;
   transition: 0.3s;
 }
 
-#recherche:hover i {
-  font-size: 21px;
+#recherche:hover span {
+  font-size: 17px;
   text-shadow: 1px 1px 2px black;
   transition: 0.3s;
 }
@@ -905,7 +907,7 @@ footer a:hover {
     display: contents;
   }
 
-  #recherche p {
+  #recherche span {
     display: none;
   }
 
